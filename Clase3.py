@@ -1,19 +1,21 @@
-
-def opcion_a_suma
-
-
-def main():
-    
-    while True :
+def mostrar_menu():
         print("Opciones:")
         print("1. Realizar acción A (Suma)")
         print("2. Realizar acción B (Producto)")
         print("0. Salir")
 
-        opcion = input("Ingrese el número de la opción deseada: ")
 
-        
+def opcion_a_suma():
+    pass
 
+def main():
+    opcion= 3
+    while opcion != 0 :
+
+        mostrar_menu()
+
+        opcion = int(input("Ingrese el número de la opción deseada: "))
+  
         if opcion == '1':
             opcion_a_suma()
         elif opcion == '2':
