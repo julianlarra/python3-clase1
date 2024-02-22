@@ -20,7 +20,7 @@ class Animal:
     def comer(self):
         return "estoy comiendo"
     
-class Perro:
+class Perro(Animal):
     def __init__(self, cantidad_patas, tipo, nombre, raza) :
         super().__init__(cantidad_patas, tipo)
         self.nombre = nombre
@@ -29,7 +29,7 @@ class Perro:
     def correr(self):
         return "estoy corriendo"
     
-class Aguila: 
+class Aguila(Animal): 
     def __init__(self, cantidad_patas, tipo) :
         super(). __init__( cantidad_patas, tipo)
 
@@ -40,8 +40,15 @@ class Aguila:
 perro1 = Perro(4,"Vertebrado", "Fito", "Colie")
 perro2 = Perro(4,"Vertebrado", "pumba", "Labrador")
 perro3 = Perro(4,"Vertebrado", "lana", "salchicha")
+print(perro1.cantidad_patas)
+print(perro1.tipo)
+print(perro1.nombre)
 print(perro1.raza)
 
-aguila1 = Aguila(2,Vertebrado,)
-aguila2 = Aguila(2,Vertebrado,)
-aguila3 = Aguila(2,Vertebrado,)
+aguila1 = Aguila(2,"Vertebrado")
+aguila2 = Aguila(2,"Vertebrado")
+aguila3 = Aguila(2,"Vertebrado")
+
+print("---------------------------------------")
+print(aguila1.cantidad_patas)
+print(aguila1.tipo)
