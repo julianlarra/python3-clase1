@@ -38,5 +38,10 @@ class Aguila:
     
 
 perro1 = Perro(4,"Vertebrado", "Fito", "Colie")
-
+perro2 = Perro(4,"Vertebrado", "pumba", "Labrador")
+perro3 = Perro(4,"Vertebrado", "lana", "salchicha")
 print(perro1.raza)
+
+aguila1 = Aguila(2,Vertebrado,)
+aguila2 = Aguila(2,Vertebrado,)
+aguila3 = Aguila(2,Vertebrado,)
